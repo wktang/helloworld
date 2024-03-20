@@ -17,19 +17,20 @@ body:
       placeholder: 1. Two Sum https://leetcode.com/problems/two-sum/
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: bug-category
     attributes:
       label: "Bug Category"
+      multiple: true
       options:
-        - label: Problem description
-        - label: Solved examples
-        - label: Problem constraints
-        - label: Problem hints
-        - label: Incorrect or missing "Related Topics"
-        - label: Incorrect test case *(Output of test case is incorrect as per the problem statement)*
-        - label: Missing test case *(Incorrect/Inefficient Code getting accepted because of missing test cases)*
-        - label: Editorial
+        - Problem description
+        - Solved examples
+        - Problem constraints
+        - Problem hints
+        - Incorrect or missing "Related Topics"
+        - Incorrect test case *(Output of test case is incorrect as per the problem statement)*
+        - Missing test case *(Incorrect/Inefficient Code getting accepted because of missing test cases)*
+        - Editorial
     validations:
       required: true
   - type: textarea
@@ -43,7 +44,6 @@ body:
     id: language-used
     attributes:
       label: "Language Used for Code"
-      multiple: true
       options:
         - C++
         - Java
@@ -70,7 +70,7 @@ body:
         - Pandas
         - Bash
     validations:
-      required: true
+      required: false
   - type: textarea
     id: code
     attributes:
