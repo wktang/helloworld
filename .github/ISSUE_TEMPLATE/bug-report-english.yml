@@ -1,20 +1,19 @@
 name: "Bug Report (English)"
 description: Create a bug report to help us improve our content.
-title: "<BUG category> - <title>"
+title: "[BUG] - <title>"
 labels: []
 body:
   - type: input
     id: leetcode-username
     attributes:
       label: "LeetCode Username"
-      description: Click on the right top corner of the problem page after logging in to get the username.
+      description: Click your avatar in the top right on the problem page after logging in to find your username.
     validations:
       required: true
   - type: input
     id: problem-details
     attributes:
-      label: "Problem Details"
-      description: Please enter Problem number, title, and link
+      label: "Problem Number, Title, and Link"
       placeholder: 1. Two Sum https://leetcode.com/problems/two-sum/
     validations:
       required: true
@@ -39,12 +38,11 @@ body:
       label: "Bug Description"
       description: A clear and concise description of what the bug is.
     validations:
-      required: false
+      required: true
   - type: dropdown
     id: language-used
     attributes:
       label: "Language Used for Code"
-      multiple: false
       options:
         - C++
         - Java
@@ -71,7 +69,7 @@ body:
         - Pandas
         - Bash
     validations:
-      required: true
+      required: false
   - type: textarea
     id: code
     attributes:
@@ -79,7 +77,7 @@ body:
       description: Please copy and paste the complete code you used for submit/run operation. This will be automatically formatted into code, so no need for backticks.
       render: bash
     validations:
-      required: true
+      required: false
   - type: textarea
     id: expected-behavior
     attributes:
