@@ -43,6 +43,7 @@ body:
     id: language-used
     attributes:
       label: "Language Used for Code"
+      multiple: true
       options:
         - C++
         - Java
