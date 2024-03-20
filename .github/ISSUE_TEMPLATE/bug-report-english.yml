@@ -24,7 +24,7 @@ body:
       multiple: true
       options:
         - Problem description
-        - Solved examples
+        - Problem examples
         - Problem constraints
         - Problem hints
         - Incorrect or missing "Related Topics"
